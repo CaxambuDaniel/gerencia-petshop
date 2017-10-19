@@ -1,6 +1,6 @@
 package caxambu.petshop.modelos;
 
-public class Pessoa {
+public abstract class Pessoa {
 	private String nome;
 	private int telefoneCel;
 	private int telefoneRes;

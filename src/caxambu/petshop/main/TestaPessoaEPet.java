@@ -1,13 +1,14 @@
 package caxambu.petshop.main;
 
 import caxambu.petshop.modelos.Endereco;
-import caxambu.petshop.modelos.Pessoa;
+import caxambu.petshop.modelos.Funcionario;
+import caxambu.petshop.modelos.Pet;
 
 public class TestaPessoaEPet {
 
 	public static void main(String[] args) {
 		
-		Pessoa p1 = new Pessoa(); 
+		Funcionario p1 = new Funcionario(); 
 		p1.setNome("daniel");
 		p1.setTelefoneCel(123);
 		p1.setTelefoneRes(73485);
@@ -15,6 +16,10 @@ public class TestaPessoaEPet {
 		p1.endereco = new Endereco("Al. tocantins", "alphaville", "Barueri", 06653020, 822);
 		
 		p1.mostra();
+		
+		Pet p2 = new Pet ("pingo","pastor",12347564 );
+			
+		p2.mostra();
 		
 	}	
 }

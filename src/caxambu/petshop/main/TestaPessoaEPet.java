@@ -1,5 +1,6 @@
 package caxambu.petshop.main;
 
+import caxambu.petshop.modelos.Cliente;
 import caxambu.petshop.modelos.Endereco;
 import caxambu.petshop.modelos.Funcionario;
 import caxambu.petshop.modelos.Pet;
@@ -17,8 +18,16 @@ public class TestaPessoaEPet {
 		
 		p1.mostra();
 		
-		Pet p2 = new Pet ("pingo","pastor",12347564 );
-			
+		Cliente p2 = new Cliente();
+		p2.setNome("jao");
+		p2.setTelefoneCel(123213);
+		p2.setTelefoneRes(123234);
+		p2.setEmail("sadaqr@sdf.com");
+		p2.endereco = new Endereco("av ieie", "glu glu", "away ", 123421, 12452123);
+		p2.pet = new Pet("bob"," castor",232628 );
+		
+		System.out.println("-----------------------------------------------------------");
+		
 		p2.mostra();
 		
 	}	

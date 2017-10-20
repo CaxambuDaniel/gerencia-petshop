@@ -16,7 +16,7 @@ public class TestaPessoaEPet {
 		p1.setEmail("asdasda@fasd.com");
 		p1.endereco = new Endereco("Al. tocantins", "alphaville", "Barueri", 06653020, 822);
 		
-		p1.mostra();
+		
 		
 		Cliente p2 = new Cliente();
 		p2.setNome("jao");
@@ -26,9 +26,18 @@ public class TestaPessoaEPet {
 		p2.endereco = new Endereco("av ieie", "glu glu", "away ", 123421, 12452123);
 		p2.pet = new Pet("bob"," castor",232628 );
 		
-		System.out.println("-----------------------------------------------------------");
+		GerenciaCadastro armario = new GerenciaCadastro();
+		armario.adiciona(p1);
+		armario.adiciona(p2);
 		
-		p2.mostra();
+		Object p1NoArmario =(Funcionario) armario.pega(0);
+		
+		System.out.println(p2);
+		
+		
+		
+		
+		
 		
 	}	
 }

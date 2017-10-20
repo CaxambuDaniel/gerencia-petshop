@@ -1,6 +1,6 @@
 package caxambu.petshop.modelos;
 
-public class Pet {
+public class Pet extends Cliente {
 	private String nome;
 	private String raca;
 	private int dataNascimento;

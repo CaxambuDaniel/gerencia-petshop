@@ -6,7 +6,9 @@ public abstract class Pessoa {
 	private int telefoneRes;
 	private int cpf;
 	private String email;
-	public Endereco endereco;
+	public Endereco endereco;	
+	
+	
 
 	public String getNome() {
 		return nome;
@@ -57,4 +59,10 @@ public abstract class Pessoa {
 		
 	}
 
+	@Override
+	public String toString() {
+		
+		return nome;
+		
+	}
 }
